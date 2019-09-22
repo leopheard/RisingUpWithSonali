@@ -2,7 +2,8 @@ from xbmcswift2 import Plugin, xbmcgui
 from resources.lib import mainaddon
 
 plugin = Plugin()
-url1 = "http://www.risingupwithsonali.com/feed/"
+url1 = "http://www.risingupwithsonali.com/feed/" #HEADLINES
+url2 = "https://archive.kpft.org/getrss.php?id=risinupsonal" #FULL
 @plugin.route('/')
 def main_menu():
     items = [
@@ -26,8 +27,8 @@ def episodes1():
 
 @plugin.route('/episodes/')
 def episodes():
-    soup1 = mainaddon.get_soup1(url1)
-    playable_podcast = mainaddon.get_playable_podcast(soup1)
+    soup2 = mainaddon.get_soup1(url2)
+    playable_podcast = mainaddon.get_playable_podcast(soup2)
     items = mainaddon.compile_playable_podcast(playable_podcast)
     return items
 

@@ -2,7 +2,8 @@ import requests
 import re
 from bs4 import BeautifulSoup
 
-url1 = "http://www.risingupwithsonali.com/feed/"
+url1 = "http://www.risingupwithsonali.com/feed/" #HEADLINES
+url2 = "https://archive.kpft.org/getrss.php?id=risinupsonal" #FULL
 
 def get_soup1(url1):
     page = requests.get(url1)
@@ -10,10 +11,16 @@ def get_soup1(url1):
     print("type: ", type(soup1))
     return soup1
 get_soup1("http://www.risingupwithsonali.com/feed/")
+def get_soup2(url2):
+    page = requests.get(url2)
+    soup2 = BeautifulSoup(page.text, 'html.parser')
+    print("type: ", type(soup2))
+    return soup2
+get_soup2("https://archive.kpft.org/getrss.php?id=risinupsonal")
 
-def get_playable_podcast1(soup1):
+def get_playable_podcast1(soup2):
     subjects = []
-    for content in soup1.find_all('item', limit=9):
+    for content in soup2.find_all('item'):
         try:        
             link = content.find('enclosure')
             link = link.get('url')
