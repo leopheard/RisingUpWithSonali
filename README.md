@@ -1,6 +1,6 @@
 <a href="http://www.risingupwithsonali.com/">Rising Up With Sonali</a> podcasts.<br>
 
-<a href="kodi.tv">KODI<a> / XBMC / Firestick addon for the <a href="http://www.risingupwithsonali.com/">Rising Up With Sonali</a> podcast.<br>
+<a href="kodi.tv">KODI<a> / XBMC / Firestick audio addon for the <a href="http://www.risingupwithsonali.com/">Rising Up With Sonali</a> podcast.<br>
 
 <a href="http://www.risingupwithsonali.com/">Rising Up With Sonali</a> is an all-women run Radio and Television show that brings progressive news coverage rooted in gender and racial justice to a wide audience. The radio program airs on Pacifica stations KPFA and KPFK, and several affiliate stations. The television show airs on Free Speech TV (Dish Network, DirecTV, Roku) weekdays from 3-4 am PST, then, from 3-4 pm PST.<br>
 
